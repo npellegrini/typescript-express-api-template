@@ -1,5 +1,10 @@
 import express from "express";
 import path from "path";
+import dotenv from "dotenv"
+
+dotenv.config({
+  path: ".env"
+})
 
 import { loadApiEndpoints } from "./controllers/api";
 
